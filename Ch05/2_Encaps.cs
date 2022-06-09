@@ -18,7 +18,7 @@ namespace Ch05
 {
     internal class _2_Encaps
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             // 객체 생성과 초기화(생성자 호출)
             Account kb = new Account("국민은행", "110-11-1234", "안로일", 1000);
