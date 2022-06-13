@@ -8,7 +8,7 @@ namespace book.Ch03
 {
     internal class P147
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             ConsoleKeyInfo info = Console.ReadKey();
             switch (info.Key)
