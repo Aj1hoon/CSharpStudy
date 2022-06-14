@@ -35,7 +35,7 @@ namespace Ch06
 
     internal class _3_Structure
     {
-        static void Main03(string[] args)
+        static void Main(string[] args)
         {
             MyPoint p1;
             p1.x = 10;

@@ -32,7 +32,7 @@ namespace Ch06
 
     internal class _4_Generic
     {
-        static void Main(string[] args)
+        static void Main04(string[] args)
         {
             Apple apple = new Apple("한국", 3000);
             Banana banana = new Banana("대만", 4000);
