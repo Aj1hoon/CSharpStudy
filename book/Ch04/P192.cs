@@ -8,11 +8,11 @@ namespace book.Ch04
 {
     internal class P192
     {
-        static void Main(string[] args)
+        static void Main02(string[] args)
         {
             // 01 배열
             int[] array = { 52, 273, 103, 32 };
-            int[] array = new int[100];
+            
 
             Console.WriteLine(array);
 
