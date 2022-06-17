@@ -29,7 +29,7 @@ namespace Test._3
 
     internal class _3_09
     {
-        static void Main(string[] args)
+        static void Main09(string[] args)
         {
             _3_09 instance = new _3_09();
 
