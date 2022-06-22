@@ -8,7 +8,7 @@ namespace book.Ch10
 {
     internal class P475
     {
-        static void Main(string[] args)
+        static void Main475(string[] args)
         {
             Console.Write("입력 : ");
             string input = Console.ReadLine();
