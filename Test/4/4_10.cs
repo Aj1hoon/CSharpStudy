@@ -56,7 +56,7 @@ namespace Test._4
     }
     internal class _4_10
     {
-        static void Main(string[] args)
+        static void Main10(string[] args)
         {
             Worker worker = new Worker("김유신");
             Developer developer = new Developer("김춘추");
