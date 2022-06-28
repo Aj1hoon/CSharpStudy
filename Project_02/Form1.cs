@@ -11,55 +11,7 @@ namespace Project_02
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // 데이터베이스 접속 정보
-            string server = "127.0.0.1";
-            string port = "3306";
-            string username = "tester";
-            string password = "1q2w3e";
-            string database = "testdb";
-
-            // 데이터베이스 커넥션
-            string strConn = $"server = {server};username = {username};password = {password};database = {database};";
-            MySqlConnection conn = new MySqlConnection(strConn);
-
-            // 데이터 공급 리스트 생성
-            List<User> users = new List<User>();
-
-            try
-            {
-                // 데이터베이스 접속
-                conn.Open();
-
-                // SQL 실행
-                MySqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT * FROM `user2`";
-
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                // 결과 리스트 생성
-                while (reader.Read())
-                {
-                    User user = new User();
-                    user.Uid = reader[0].ToString();
-                    user.Name = reader[1].ToString();
-                    user.Hp = reader[2].ToString();
-                    user.Age = Convert.ToInt32(reader[3]);
-
-                    users.Add(user);
-                }
-
-            }
-
-            catch (Exception except)
-            {
-                Console.WriteLine(except.Message);
-            }
-            finally
-            {
-                // 데이터베이스 종료
-                conn.Close();
-            }
-
+            List<User> users = DBAccess.Instance.SelectUsers();
             // 데이터그리드뷰 데이터 공급
             dataGridView1.DataSource = users;
         }
@@ -71,75 +23,9 @@ namespace Project_02
             string hp = txtHp.Text.ToString();
             string age = NumericUpDown.Text.ToString();
 
+            DBAccess.Instance.InsertUser(uid, name, hp, age);
 
-            // 데이터베이스 접속 정보
-            string server = "127.0.0.1";
-            string port = "3306";
-            string username = "tester";
-            string password = "1q2w3e";
-            string database = "testdb";
-
-            // 데이터베이스 커넥션
-            string strConn = $"server = {server};username = {username};password = {password};database = {database};";
-            MySqlConnection conn = new MySqlConnection(strConn);
-
-            List<User> users = new List<User>();
-
-            try
-            {
-                conn.Open();
-
-                // SQL 실행
-                MySqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = $"INSERT INTO `user2` VALUES ('{uid}', '{name}', '{hp}', {age})";
-
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception except)
-            {
-                Console.WriteLine(except.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }
-            MessageBox.Show("데이터가 저장되었습니다.", "Insert 완료");
-            Reset();
-
-            try
-            {
-                // 데이터베이스 접속
-                conn.Open();
-
-                // SQL 실행
-                MySqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT * FROM `user2`";
-
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                // 결과 리스트 생성
-                while (reader.Read())
-                {
-                    User user = new User();
-                    user.Uid = reader[0].ToString();
-                    user.Name = reader[1].ToString();
-                    user.Hp = reader[2].ToString();
-                    user.Age = Convert.ToInt32(reader[3]);
-
-                    users.Add(user);
-                }
-
-            }
-
-            catch (Exception except)
-            {
-                Console.WriteLine(except.Message);
-            }
-            finally
-            {
-                // 데이터베이스 종료
-                conn.Close();
-            }
+            List<User> users = DBAccess.Instance.SelectUsers();
             dataGridView1.DataSource = users;
         }
 
@@ -158,44 +44,48 @@ namespace Project_02
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string uid = txtUid.Text.ToString();
+            DBAccess.Instance.DeleteUser(uid);
+
+            List<User> users = DBAccess.Instance.SelectUsers();
+            dataGridView1.DataSource = users;
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // MessageBox.Show("click!");
+            int selectedRow = e.RowIndex;
+            DataGridViewRow row = dataGridView1.Rows[selectedRow];
+
+            string name = row.Cells[1].Value.ToString();
+            txtName.Text = name;
+
+            string uid = row.Cells[0].Value.ToString();
+            txtUid.Text = uid;
+
+            string hp = row.Cells[2].Value.ToString();
+            txtHp.Text = hp;
+
+            string age = row.Cells[3].Value.ToString();
+            //int age = (int)row.Cells[3].Value;
+            NumericUpDown.Text = age;
+
+            Console.Write(uid + name + hp + age);
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string uid = txtUid.Text.ToString();
             string name = txtName.Text.ToString();
             string hp = txtHp.Text.ToString();
             string age = NumericUpDown.Text.ToString();
 
+            DBAccess.Instance.UpdateUser(uid, name, hp, age);
+        }
 
-            // 데이터베이스 접속 정보
-            string server = "127.0.0.1";
-            string port = "3306";
-            string username = "tester";
-            string password = "1q2w3e";
-            string database = "testdb";
-
-            // 데이터베이스 커넥션
-            string strConn = $"server = {server};username = {username};password = {password};database = {database};";
-            MySqlConnection conn = new MySqlConnection(strConn);
-
-            try
-            {
-                conn.Open();
-
-                // SQL 실행
-                MySqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = $"DELETE FROM `user2` WHERE '{uid}' = `txtUid`";
-
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception except)
-            {
-                Console.WriteLine(except.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-            MessageBox.Show("데이터가 삭제되었습니다.", "Delete 완료");
-            Reset();
-
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            List<User> users = DBAccess.Instance.SelectUsers();
+            dataGridView1.DataSource = users;
         }
     }
     }

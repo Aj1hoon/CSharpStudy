@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSelect = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,15 +56,17 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(435, 252);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // button1
+            // btnSelect
             // 
-            this.button1.Location = new System.Drawing.Point(448, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 25);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "조회";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSelect.Location = new System.Drawing.Point(448, 12);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(80, 25);
+            this.btnSelect.TabIndex = 1;
+            this.btnSelect.Text = "조회";
+            this.btnSelect.UseVisualStyleBackColor = true;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // btnInsert
             // 
@@ -84,6 +86,7 @@
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "수정";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label1
             // 
@@ -197,7 +200,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 284);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -213,7 +216,7 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private Button button1;
+        private Button btnSelect;
         private Button btnInsert;
         private Button btnUpdate;
         private Label label1;
