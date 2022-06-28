@@ -8,7 +8,7 @@ namespace Test._5
 {
     internal class _5_03
     {
-        static void Main03(string[] args)
+        static void Main(string[] args)
         {
             printList(createList());
         }
@@ -43,7 +43,6 @@ namespace Test._5
                 {
                     // 60 ~ 100 사이 임의의 수
                     int num = rand.Next(41) + 60;
-                    scoreList.Add(num);
                     
                 }
                 return scoreList;

@@ -8,7 +8,7 @@ namespace Test._7
 {
     internal class _7_06
     {
-        static void Main(string[] args)
+        static void Main06(string[] args)
         {
             string s = " Hello, World! ";
 
