@@ -1,0 +1,17 @@
+C:\Users\1302\Desktop\Study\Pstar_Project\bin\Debug\net6.0-windows\Pstar_Project.exe
+C:\Users\1302\Desktop\Study\Pstar_Project\bin\Debug\net6.0-windows\Pstar_Project.deps.json
+C:\Users\1302\Desktop\Study\Pstar_Project\bin\Debug\net6.0-windows\Pstar_Project.runtimeconfig.json
+C:\Users\1302\Desktop\Study\Pstar_Project\bin\Debug\net6.0-windows\Pstar_Project.dll
+C:\Users\1302\Desktop\Study\Pstar_Project\bin\Debug\net6.0-windows\Pstar_Project.pdb
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\Pstar_Project.csproj.AssemblyReference.cache
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\Pstar_Project.Form1.resources
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\Pstar_Project.csproj.GenerateResource.cache
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\Pstar_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\Pstar_Project.AssemblyInfoInputs.cache
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\Pstar_Project.AssemblyInfo.cs
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\Pstar_Project.csproj.CoreCompileInputs.cache
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\Pstar_Project.dll
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\refint\Pstar_Project.dll
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\Pstar_Project.pdb
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\Pstar_Project.genruntimeconfig.cache
+C:\Users\1302\Desktop\Study\Pstar_Project\obj\Debug\net6.0-windows\ref\Pstar_Project.dll
