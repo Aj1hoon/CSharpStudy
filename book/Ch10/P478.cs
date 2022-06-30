@@ -8,7 +8,7 @@ namespace book.Ch10
 {
     internal class P478
     {
-        static void Main(string[] args)
+        static void Main478(string[] args)
         {
             Console.WriteLine("입력 : ");
             try
@@ -20,7 +20,7 @@ namespace book.Ch10
                 Console.WriteLine("입력 숫자 : " + index);
                 Console.WriteLine("입력 숫자 : " + array[index]);
             }
-            catch (FormatException exception)
+            catch (FormatException exception) { }
         }
     }
 }

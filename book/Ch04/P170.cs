@@ -8,7 +8,7 @@ namespace book.Ch04
 {
     internal class P170
     {
-        static void Main170(string[] args)
+        static void Main(string[] args)
         {
             // 배열을 생성합니다.
             int[] intArray = { 1, 2, 3, 4, 5, 6 };
@@ -18,7 +18,6 @@ namespace book.Ch04
             {
                 Console.WriteLine(intArray[i]);
             }
-
         }
     }
 }

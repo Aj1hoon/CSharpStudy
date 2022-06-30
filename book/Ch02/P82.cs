@@ -10,6 +10,12 @@ namespace book.Ch02
     {
         static void Main82(string[] args)
         {
+            // 음수를 사용하지 않을때
+            uint unsignedInt = 4147483647;
+            ulong unsignedLong = 11223372036854775808;
+            Console.WriteLine(unsignedInt);
+            Console.WriteLine(unsignedLong);
+
             // 최댓값과 최솟값
             Console.WriteLine(int.MaxValue);
             Console.WriteLine(int.MinValue);
