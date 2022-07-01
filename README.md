@@ -66,7 +66,7 @@
 
 	
 ## Project_01. 계산기
-![Project_01](./Project_01/Project_01.png)
+![Project_01](./Project_01/Project_01.jpg)
 1. 프로젝트 유형
 	- WinForm 프로젝트
 2. 활용기술
@@ -74,7 +74,7 @@
 	- 이벤트 핸들러
 	
 ## Project_02. 데이터 매니저
-![Project_02](./Project_02/Project_02.png)
+
 1. 프로젝트 유형
 	- WinForm 프로젝트
 2. 활용기술
@@ -83,7 +83,7 @@
 	- 데이터베이스와 SQL
 	
 ## Project_03. 오목
-![Project_03](./Project_03/Project_03.png)
+
 1. 프로젝트 유형
 	- WinForm 프로젝트
 2. 활용기술
@@ -91,7 +91,7 @@
 	- 이벤트와 핸들러
 
 ## Project_04. 벽돌깨기
-![Project_04](./Project_04/Project_04.png)
+
 1. 프로젝트 유형
 	- WinForm 프로젝트
 2. 활용기술
