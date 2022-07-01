@@ -1,0 +1,17 @@
+C:\Users\1302\Desktop\Study\Project_04\bin\Debug\net6.0-windows\Project_04.exe
+C:\Users\1302\Desktop\Study\Project_04\bin\Debug\net6.0-windows\Project_04.deps.json
+C:\Users\1302\Desktop\Study\Project_04\bin\Debug\net6.0-windows\Project_04.runtimeconfig.json
+C:\Users\1302\Desktop\Study\Project_04\bin\Debug\net6.0-windows\Project_04.dll
+C:\Users\1302\Desktop\Study\Project_04\bin\Debug\net6.0-windows\Project_04.pdb
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\Project_04.csproj.AssemblyReference.cache
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\Project_04.Form1.resources
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\Project_04.csproj.GenerateResource.cache
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\Project_04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\Project_04.AssemblyInfoInputs.cache
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\Project_04.AssemblyInfo.cs
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\Project_04.csproj.CoreCompileInputs.cache
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\Project_04.dll
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\refint\Project_04.dll
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\Project_04.pdb
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\Project_04.genruntimeconfig.cache
+C:\Users\1302\Desktop\Study\Project_04\obj\Debug\net6.0-windows\ref\Project_04.dll
